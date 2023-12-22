@@ -1,0 +1,23 @@
+#By Taking Input of People
+# Selecting Random People from a Group of People,
+# who will going to pay the Restaurant Bills Today!
+
+import random
+#Taking names Input
+names = []
+
+while True:
+  name = input ("Enter a name (or Type'exit' to Stop)")
+
+  if name == 'exit':
+    break
+
+  names.append(name)
+
+length_of_list = len(names)
+#print(len_of_list)
+
+random_number = random.randint(0,(length_of_list-1))
+#print(random_number)
+print(f'Today','*',names[random_number],'*','will pay the Bills')
+
